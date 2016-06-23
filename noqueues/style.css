@@ -25,8 +25,8 @@ body {
   width: 100%;
   height: 120px;
   background-color: #2c3e50;
-  position: fixed;
-  top: 0px;
+  /*position: fixed;
+  top: 0px;*/
   font-family: Loto, sans-serif;
   display: flex;
   justify-content: space-between;
@@ -56,7 +56,7 @@ body {
   display: inline-block;
   border-radius: 5px;
   height: 50px;
-  width: 100px;
+  width: 150px;
   text-align: center;
   padding-top: 12px;
 }
@@ -69,9 +69,58 @@ body {
 .page-menu a:hover {
   background-color: gray;
 }
-/*.welcome-section {
-  margin-top: 120px;
-}*/
+
+
+.developers-team,
+.partners,
+.contacts-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.developers-team-container {
+  height: 500px;
+  background-color: #e1f5fe;
+  font-size: 30px;
+  color: #2c3e50;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.developers-team-container h2 {
+  margin: 0px 0px 10px 0px;
+  padding-top: 15px;
+}
+
+.team-description {
+  font-weight: 100;
+  font-family: Lato, sans-serif;
+  font-size: 23px;
+}
+
+.developer {
+  width: 240px;
+  height: 300px;
+}
+
+.developer-avatar {
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+}
+
+.developers-name {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.developers-position {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
 .push {
   height: 300px;
 }
@@ -84,9 +133,6 @@ body {
 .contacts-info {
   background-color: inherit;
   height: 240px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   color: white;
   font-family: Lato, sans-serif;;
 }

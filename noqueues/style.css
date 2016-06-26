@@ -79,7 +79,10 @@ body {
   font-family: Lato, sans-serif;
   text-align: center;
 }
-.welcome-section h2 {
+
+.welcome-section h2,
+.developers-team-section h2,
+.abilities-section h2 {
   font-size: 40px;
   font-family: Arial, sans-serif;
 }
@@ -119,15 +122,70 @@ body {
   margin-top: 40px;
 }
 
+.abilities-section {
+  padding-bottom: 50px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.ability {
+  padding-top: 50px;
+  width: 240px;
+}
+
+.ability-description {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  margin-top: 60px;
+}
+
+.hexagon {
+  margin: 0 auto;
+	width: 200px;
+	height: 110px;
+	background: #2c3e50;
+	position: relative;
+  color: white;
+  padding-top: 15px;
+  font-size: 70px;
+}
+
+.hexagon:before {
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 50px solid #2c3e50;
+
+}
+
+.hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right:100px solid transparent;
+	border-top: 50px solid #2c3e50;
+}
+
 .developers-team,
-.contacts-info {
+.contacts-info,
+.abilities-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.developers-team-container {
-  height: 500px;
+.developers-team-section {
+  padding: 25px 0px 50px 0px;
   background-color: #e1f5fe;
   font-size: 30px;
   color: #2c3e50;
@@ -135,11 +193,10 @@ body {
   text-align: center;
 }
 
-.developers-team-container h2 {
+.developers-team-section h2 {
   margin: 0px 0px 30px 0px;
-  padding-top: 15px;
+  padding-top: 20px;
 }
-
 
 
 .developer {
@@ -213,6 +270,14 @@ body {
   height: 100%;
 }
 
+.email-link {
+  color: white;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
 
 .copyright {
   height: 60px;

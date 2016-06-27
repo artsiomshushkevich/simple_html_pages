@@ -20,6 +20,14 @@
     font-size: 27px;
   }
 
+  .page-header .menu-button {
+    display: block;
+  }
+
+  .not-hidden-menu {
+    display: none;
+  }
+
   .container .welcome-section h2,
   .container .abilities-section h2,
   .container .developers-team-section h2 {
@@ -43,6 +51,14 @@
               and (max-device-width: 767px) {
   .page-header .logo a{
     font-size: 35px;
+  }
+
+  .page-header .menu-button {
+    display: block;
+  }
+
+  .not-hidden-menu {
+    display: none;
   }
 
   .welcome-section {
@@ -77,16 +93,28 @@
 
 @media screen and (min-width: 768px)
               and (max-width: 1024px) {
-    .welcome-section {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    .contacts-info-chunk span,
-    .contacts-info-chunk .email-link {
-      font-size: 16px;
-    }
+  .welcome-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .not-hidden-menu {
+    display: block;
+  }
+  .page-header .hidden-menu {
+    display: none;
+  }
+  .contacts-info-chunk span,
+  .contacts-info-chunk .email-link {
+    font-size: 16px;
+  }
 }
+
+@media screen and (min-width: 1025px) {
+  .page-header .hidden-menu {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -103,21 +131,25 @@ body {
   font-size: 50px;
 }
 
-.page-header {
+.page-header-container {
   width: 100%;
   height: 120px;
-  background-color: #2c3e50;
   position: fixed;
   top: 0px;
+  z-index: 1;
+}
+
+.page-header {
+  position: relative;
+  height: 100%;
   font-family: Loto, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  z-index: 1;
+  background-color: #2c3e50;
 }
-
 .page-header a {
   text-decoration: none;
 }
@@ -153,6 +185,54 @@ body {
   background-color: gray;
 }
 
+.menu-button {
+  background-color: inherit;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+  display: none
+}
+
+.hidden-menu {
+  position: absolute;
+  width: 100%;
+  display: none;
+  transition: display 0.3s linear;
+  bottom: -150px;
+  right: 0px;
+}
+
+.hidden-menu ul {
+  list-style-type: none;
+  padding-left: 0px;
+  border: 1px solid black;
+}
+
+.hidden-menu li {
+  height: 50px;
+}
+
+.hidden-menu li:first-child {
+  border-bottom: 1px solid black;
+}
+
+.hidden-menu a {
+  display: block;
+  background-color: #2c3e50;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  height: 100%;
+  padding-top: 10px;
+}
+.show {
+  display: block;
+}
 .welcome-section {
   padding-top: 140px;
   padding-bottom: 50px;

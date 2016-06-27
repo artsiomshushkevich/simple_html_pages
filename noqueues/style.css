@@ -1,10 +1,92 @@
 @font-face {
-    font-family: 'Lato';
-    src: url('./fonts/Lato-Regular.woff2'),
-         url('./fonts/Lato-Regular.woff'),
-         url('./fonts/Lato-Regular.ttf');
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular.woff2'),
+       url('./fonts/Lato-Regular.woff'),
+       url('./fonts/Lato-Regular.ttf');
 }
 
+
+@media screen and (min-device-width: 0px)
+              and (max-device-width: 319px) {
+  .container,
+  .page-footer {
+    width: 1024px;
+  }
+}
+
+@media screen and (min-device-width: 320px)
+              and (max-device-width: 480px) {
+  .page-header .logo a{
+    font-size: 27px;
+  }
+
+  .container .welcome-section h2,
+  .container .abilities-section h2,
+  .container .developers-team-section h2 {
+    font-size: 25px;
+  }
+
+  .divider-inner .skills {
+    font-size: 23px;
+    padding:10px 5px  25px 5px;
+
+  }
+
+  .contacts-info,
+  .developers-team,
+  .abilities-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-device-width: 481px)
+              and (max-device-width: 767px) {
+  .page-header .logo a{
+    font-size: 35px;
+  }
+
+  .welcome-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contacts-info,
+  .developers-team,
+  .abilities-container {
+    flex-direction: column;
+  }
+
+  .abilities-container .ability {
+    width: 300px;
+  }
+
+  .ability .ability-description {
+    font-size: 23px;
+  }
+
+  .developer {
+    margin-bottom: 20px;
+  }
+  .developer .developers-name {
+    font-size: 22px;
+  }
+
+  .developer .developers-position {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px)
+              and (max-width: 1024px) {
+    .welcome-section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .contacts-info-chunk span,
+    .contacts-info-chunk .email-link {
+      font-size: 16px;
+    }
+}
 * {
   box-sizing: border-box;
 }
@@ -17,7 +99,7 @@ body {
 
 .container {
   min-height: 100%;
-  margin-bottom: -300px;
+  margin-bottom: -60px;
   font-size: 50px;
 }
 
@@ -73,7 +155,7 @@ body {
 
 .welcome-section {
   padding-top: 140px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   background-color: #e1f5fe;
   color: #2c3e50;
   font-family: Lato, sans-serif;
@@ -222,23 +304,29 @@ body {
   font-weight: 500;
 }
 .push {
-  height: 300px;
+  height: 60px;
 }
 
 .page-footer {
-  background-color: #2c3e50;
-  height: 300px;
+  height: 60px;
+  padding-top: 20px;
+  background-color: #233140;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 .contacts-info {
-  background-color: inherit;
-  height: 240px;
+  background-color: #2c3e50;
   color: white;
-  font-family: Lato, sans-serif;;
+  font-family: Lato, sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .contacts-info-chunk {
-  height: 200px;
+  height: 150px;
   width: 240px;
   text-align: center;
   font-size: 18px;
@@ -277,14 +365,4 @@ body {
 
 .email-link:hover {
   text-decoration: underline;
-}
-
-.copyright {
-  height: 60px;
-  padding-top: 20px;
-  background-color: #233140;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-  color: white;
-  text-align: center;
 }

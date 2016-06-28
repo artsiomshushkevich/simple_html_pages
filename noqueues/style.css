@@ -6,16 +6,16 @@
 }
 
 
-@media screen and (min-device-width: 0px)
-              and (max-device-width: 319px) {
+@media screen and (min-width: 0px)
+              and (max-width: 319px) {
   .container,
   .page-footer {
     width: 1024px;
   }
 }
 
-@media screen and (min-device-width: 320px)
-              and (max-device-width: 480px) {
+@media screen and (min-width: 320px)
+              and (max-width: 480px) {
   .page-header .logo a{
     font-size: 27px;
   }
@@ -47,8 +47,8 @@
   }
 }
 
-@media screen and (min-device-width: 481px)
-              and (max-device-width: 767px) {
+@media screen and (min-width: 481px)
+              and (max-width: 767px) {
   .page-header .logo a{
     font-size: 35px;
   }

@@ -151,7 +151,7 @@
       </footer>
 
       <script type="text/javascript">
-        function showHiddenMenu(event) {
+        function showHiddenMenuByClick(event) {
           var hiddenMenu = document.querySelector('.hidden-menu');
           if (event.target.matches('#menu-button') ||
               event.target.matches('.fa.fa-bars')) {
@@ -162,8 +162,12 @@
             }
           }
         }
-      //  window.addEventListener('click', showHiddenMenu);
-        window.addEventListener('touchend', showHiddenMenu);
+        function showHiddenMenuByTouch() {
+          var hiddenMenu = document.querySelector('.hidden-menu');
+          hiddenMenu.classList.toggle('show');
+        }
+        window.addEventListener('click', showHiddenMenuByClick);
+        document.querySelector('#menu-button').addEventListener('touchend', showHiddenMenuByTouch);
       </script>
   </body>
 </html>

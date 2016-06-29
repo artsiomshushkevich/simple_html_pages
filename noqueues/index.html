@@ -151,23 +151,31 @@
       </footer>
 
       <script type="text/javascript">
-        function showHiddenMenuByClick(event) {
-          var hiddenMenu = document.querySelector('.hidden-menu');
-          if (event.target.matches('#menu-button') ||
-              event.target.matches('.fa.fa-bars')) {
-            hiddenMenu.classList.toggle('show');
-          } else {
-            if (hiddenMenu.classList.contains('show')) {
-              hiddenMenu.classList.remove('show');
+        (function() {
+          var isTouched = false;
+          function showHiddenMenuByClick(event) {
+            if (isTouched) {
+              return;
+            }
+            var hiddenMenu = document.querySelector('.hidden-menu');
+            if (event.target.matches('#menu-button') ||
+                event.target.matches('.fa.fa-bars')) {
+              hiddenMenu.classList.toggle('show');
+            } else {
+              if (hiddenMenu.classList.contains('show')) {
+                hiddenMenu.classList.remove('show');
+              }
             }
           }
-        }
-        function showHiddenMenuByTouch() {
-          var hiddenMenu = document.querySelector('.hidden-menu');
-          hiddenMenu.classList.toggle('show');
-        }
-        window.addEventListener('click', showHiddenMenuByClick);
-        document.querySelector('#menu-button').addEventListener('touchend', showHiddenMenuByTouch);
+          function showHiddenMenuByTouch() {
+            var hiddenMenu = document.querySelector('.hidden-menu');
+            hiddenMenu.classList.toggle('show');
+            isTouched = true;
+          }
+          window.addEventListener('click', showHiddenMenuByClick);
+          document.querySelector('#menu-button').addEventListener('touchend', showHiddenMenuByTouch);
+        })();
+
       </script>
   </body>
 </html>

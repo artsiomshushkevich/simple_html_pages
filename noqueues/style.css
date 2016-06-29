@@ -209,7 +209,7 @@ body {
   width: 100%;
   display: none;
   transition: display 0.3s linear;
-  bottom: -150px;
+  bottom: -100px;
   right: 0px;
 }
 

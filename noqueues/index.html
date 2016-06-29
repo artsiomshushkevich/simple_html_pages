@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>No Queues</title>
+    <title>VetArtDim</title>
     <link rel="stylesheet" href="./style.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
@@ -151,7 +151,7 @@
       </footer>
 
       <script type="text/javascript">
-        window.addEventListener('click', function(event) {
+        function showHiddenMenu(event) {
           var hiddenMenu = document.querySelector('.hidden-menu');
           if (event.target.matches('#menu-button') ||
               event.target.matches('.fa.fa-bars')) {
@@ -161,7 +161,9 @@
               hiddenMenu.classList.remove('show');
             }
           }
-        });
+        }
+      //  window.addEventListener('click', showHiddenMenu);
+        window.addEventListener('touchend', showHiddenMenu);
       </script>
   </body>
 </html>

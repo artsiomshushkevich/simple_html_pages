@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.woff2"),
+       url("../fonts/Lato/Lato-Regular.woff"),
+       url("../fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Existence";
+  src: url("../fonts/Existence/existence-light.woff"),
+       url("../fonts/Existence/existence-light.ttf");
+}
+
+$pink: #9f449b;
+$lato-font-stack: Lato, Arial, sans-serif;
+$existence-font-stack: Existence, Arial, sans-serif;
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+.page-header {
+  color: white;
+  font-family: $lato-font-stack;
+}

@@ -10,10 +10,29 @@
   padding: 0px; }
 
 .container {
-  margin: 0px auto; }
+  margin: 0px auto;
+  width: 1000px; }
 
 .page-header {
+  height: 585px;
+  background-image: url("../images/header-background.png");
   color: white;
-  font-family: Lato, Arial, sans-serif; }
+  font-family: Lato, Arial, sans-serif;
+  text-align: center;
+  padding: 30px 0px 30px 0px; }
+  .page-header h1 {
+    font-size: 0px;
+    font-family: Existence, Arial, sans-serif;
+    font-size: bold; }
+    .page-header h1 span {
+      font-size: 45px; }
+    .page-header h1 span:nth-child(2) {
+      color: #9f449b; }
+  .page-header .header-description {
+    font-size: 24px; }
+    .page-header .header-description h3 {
+      font-weight: 200; }
+    .page-header .header-description p {
+      font-weight: 100; }
 
 /*# sourceMappingURL=output.css.map */

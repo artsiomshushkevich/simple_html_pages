@@ -23,9 +23,35 @@ $existence-font-stack: Existence, Arial, sans-serif;
 
 .container {
   margin: 0px auto;
+  width: 1000px;
+  
 }
 
 .page-header {
+  height: 585px;
+  background-image: url("../images/header-background.png");
   color: white;
   font-family: $lato-font-stack;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  h1 {
+    font-size: 0px;
+    font-family: $existence-font-stack;
+    font-size: bold;
+    span {
+      font-size: 45px;
+    }
+    span:nth-child(2) {
+      color: $pink;
+    }
+  }
+  .header-description {
+    font-size: 24px;
+    h3 {
+      font-weight: 200;
+    }
+    p {
+      font-weight: 100;
+    }
+  }
 }

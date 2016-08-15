@@ -12,6 +12,7 @@
 }
 
 $pink: #9f449b;
+$special-gray: #676767;
 $lato-font-stack: Lato, Arial, sans-serif;
 $existence-font-stack: Existence, Arial, sans-serif;
 
@@ -60,9 +61,9 @@ $existence-font-stack: Existence, Arial, sans-serif;
 }
 
 .header-sprite {
-    background-image: url(../images/header-sprites.png);
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url(../images/header-sprites.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-arrow-15,
@@ -77,45 +78,45 @@ $existence-font-stack: Existence, Arial, sans-serif;
 }
 
 .sprite-arrow-15 {
-    width: 15px;
-    height: 8px;
-    background-position: -10px -10px;
+  width: 15px;
+  height: 8px;
+  background-position: -10px -10px;
 }
 
 .sprite-bubble {
-    width: 31px;
-    height: 28px;
-    background-position: -10px -38px;
+  width: 31px;
+  height: 28px;
+  background-position: -10px -38px;
 }
 
 .sprite-paperplane {
-    width: 29px;
-    height: 29px;
-    background-position: -10px -86px;
+  width: 29px;
+  height: 29px;
+  background-position: -10px -86px;
 }
 
 .sprite-pen {
-    width: 29px;
-    height: 29px;
-    background-position: -10px -135px;
+  width: 29px;
+  height: 29px;
+  background-position: -10px -135px;
 }
 
 .sprite-photo {
-    width: 25px;
-    height: 27px;
-    background-position: -10px -184px;
+  width: 25px;
+  height: 27px;
+  background-position: -10px -184px;
 }
 
 .sprite-settings {
-    width: 29px;
-    height: 29px;
-    background-position: -10px -231px;
+  width: 29px;
+  height: 29px;
+  background-position: -10px -231px;
 }
 
 .sprite-user {
-    width: 29px;
-    height: 29px;
-    background-position: -10px -280px;
+  width: 29px;
+  height: 29px;
+  background-position: -10px -280px;
 }
 
 .page-header {
@@ -234,5 +235,130 @@ $existence-font-stack: Existence, Arial, sans-serif;
   .header-hexagon:hover::after,
   .header-submit-hexagon:hover::after {
     border-top-color: $pink;
+  }
+}
+
+.company-logo {
+  color: $special-gray;
+  font-family: $existence-font-stack;
+  font-size: 0px;
+  font-weight: bold;
+  span:nth-child(2) {
+    color: $pink;
+  }
+}
+
+.page-nav-bar {
+  height: 80px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  .nav-bar-company-logo {
+    @extend .company-logo;
+    
+    span {
+      font-size: 24px;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    
+    li {
+      display: inline;
+      width: 90px;      
+      margin-right: 20px;
+      
+      a {
+        text-decoration:  none;
+        text-align: center;
+        color: $special-gray;
+        font-family: $lato-font-stack;
+      }
+      
+      a:hover {
+        color: $pink;
+      }
+    }
+  }
+}
+
+.benefits-section {
+  height: 398px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $special-gray;
+  font-family: $lato-font-stack;
+  background-color: #eeeeee;
+  
+  .benefit {
+    padding-top: 40px;
+    
+    p {
+      width: 200px;
+      text-align: center;
+    }
+    
+    p:nth-child(2) {
+      margin-top: 50px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    p:nth-child(3) {
+      font-size: 11px;
+    }
+  }
+  
+  .benefit-hexagon {
+    @extend .hexagon;
+    background-color: #95a5a6;
+    margin: 0px auto;
+  }
+  
+  .benefit-hexagon:before {
+    @extend .hexagon:before;
+    border-bottom: 25px solid #95a5a6;
+  }
+  
+  .benefit-hexagon:after {
+    @extend .hexagon:after;
+    border-top: 25px solid #95a5a6;
+  }
+}
+
+.divider-section {
+  height: 313px;
+  background-image: url(../images/divider-background.png);
+  color: white;
+  font-family: $lato-font-stack;
+  font-size: 24px;
+  padding-top: 100px;
+  
+  .divider-section-hexagon {
+    @extend .hexagon;
+    padding-top: 10px;
+    margin: 0px auto;
+  }
+  
+  .divider-section-hexagon:before {
+    @extend .hexagon:before;
+    border-bottom: 25px solid rgba(255,255,255,0.5);
+  }
+  
+  .divider-section-hexagon:after {
+    @extend .hexagon:after;
+    border-top: 25px solid rgba(255,255,255,0.5);
+  }
+  
+  h3 {
+    width: 450px;
+    margin: 60px auto;
+    font-weight: 100;
+    text-align: center;
   }
 }

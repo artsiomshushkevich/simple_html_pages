@@ -13,14 +13,14 @@
   margin: 0px auto;
   width: 1000px; }
 
-.hexagon, .page-header .header-hexagon, .page-header .header-submit-hexagon, .benefits-section .benefit-hexagon, .divider-section .divider-section-hexagon {
+.hexagon, .page-header .header-hexagon, .page-header .header-submit-hexagon, .benefits-section .benefit-hexagon, .divider-section .divider-section-hexagon, .team-section .prev-next-hexagon {
   width: 100px;
   height: 55px;
   position: relative;
   transition: background-color 0.3s ease;
   background-color: rgba(255, 255, 255, 0.5); }
 
-.hexagon:before, .page-header .header-hexagon:before, .page-header .header-submit-hexagon:before, .benefits-section .benefit-hexagon:before, .divider-section .divider-section-hexagon:before {
+.hexagon:before, .page-header .header-hexagon:before, .page-header .header-submit-hexagon:before, .benefits-section .benefit-hexagon:before, .divider-section .divider-section-hexagon:before, .team-section .prev-next-hexagon:before {
   content: "";
   position: absolute;
   top: -25px;
@@ -31,7 +31,7 @@
   border-right: 50px solid transparent;
   transition: border-bottom-color 0.3s ease; }
 
-.hexagon:after, .page-header .header-hexagon:after, .page-header .header-submit-hexagon:after, .benefits-section .benefit-hexagon:after, .divider-section .divider-section-hexagon:after {
+.hexagon:after, .page-header .header-hexagon:after, .page-header .header-submit-hexagon:after, .benefits-section .benefit-hexagon:after, .divider-section .divider-section-hexagon:after, .team-section .prev-next-hexagon:after {
   content: "";
   position: absolute;
   bottom: -25px;
@@ -212,12 +212,12 @@
     .benefits-section .benefit p:nth-child(3) {
       font-size: 11px; }
   .benefits-section .benefit-hexagon {
-    background-color: #95a5a6;
+    background-color: #bdc3c7;
     margin: 0px auto; }
   .benefits-section .benefit-hexagon:before {
-    border-bottom: 25px solid #95a5a6; }
+    border-bottom: 25px solid #bdc3c7; }
   .benefits-section .benefit-hexagon:after {
-    border-top: 25px solid #95a5a6; }
+    border-top: 25px solid #bdc3c7; }
 
 .divider-section {
   height: 313px;
@@ -295,5 +295,87 @@
         text-align: center;
         padding-top: 12px;
         margin-top: 27px; }
+
+.team-section {
+  padding: 50px 120px 50px 120px; }
+  .team-section .prev-next-links-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px; }
+  .team-section .prev-next-hexagon {
+    width: 50px;
+    height: 27px;
+    background-color: #bdc3c7;
+    display: block; }
+  .team-section .prev-next-hexagon:before {
+    top: -13.7px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 14px solid #bdc3c7; }
+  .team-section .prev-next-hexagon:after {
+    bottom: -13.7px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 14px solid #bdc3c7; }
+  .team-section .prev-next-hexagon:nth-child(1) {
+    margin-right: 8px; }
+  .team-section .prev-next-hexagon:nth-child(2) {
+    margin-left: 8px; }
+  .team-section .team {
+    display: flex;
+    justify-content: space-around;
+    font-family: Lato, Arial, sans-serif;
+    text-align: center;
+    margin-top: 80px; }
+    .team-section .team .employee p:nth-child(2) {
+      color: #484848;
+      font-size: 15px;
+      font-weight: 700;
+      margin: 20px 0px 5px 0px; }
+    .team-section .team .employee p:nth-child(3) {
+      color: #777777;
+      font-size: 11px;
+      font-weight: 200;
+      margin-bottom: 10px; }
+    .team-section .team .contact-links {
+      display: flex;
+      justify-content: center; }
+    .team-section .team img,
+    .team-section .team .contact-link {
+      border-radius: 50%;
+      display: block; }
+    .team-section .team img {
+      width: 127px;
+      height: 127px; }
+    .team-section .team .contact-link {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #777777;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      color: #777777;
+      padding-top: 5px;
+      margin-right: 10px; }
+    .team-section .team .contact-link:hover {
+      background-color: #676767;
+      color: white; }
+
+.skills-section {
+  padding: 30px 0px 50px 0px; }
+  .skills-section .skill-description {
+    display: flex;
+    justify-content: space-between; }
+    .skills-section .skill-description p {
+      color: #222222;
+      font-size: 13px; }
+  .skills-section .skill-diagramm {
+    position: relative;
+    width: 210px;
+    height: 12px; }
+    .skills-section .skill-diagramm div {
+      position: absolute;
+      width: inherit;
+      height: inherit;
+      background-color: #9f449b; }
 
 /*# sourceMappingURL=output.css.map */

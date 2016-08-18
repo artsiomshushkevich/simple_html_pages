@@ -362,17 +362,27 @@
 
 .skills-section {
   padding: 30px 0px 50px 0px; }
+  .skills-section .skills-container {
+    width: 600px;
+    margin: 50px auto; }
+  .skills-section .skill {
+    width: 280px;
+    height: 100px;
+    padding: 20px 20px 20px 50px;
+    display: inline-block; }
   .skills-section .skill-description {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 10px; }
     .skills-section .skill-description p {
       color: #222222;
       font-size: 13px; }
-  .skills-section .skill-diagramm {
+  .skills-section .skill-diagram {
     position: relative;
     width: 210px;
-    height: 12px; }
-    .skills-section .skill-diagramm div {
+    height: 12px;
+    background-color: #f0f0f0; }
+    .skills-section .skill-diagram div {
       position: absolute;
       width: inherit;
       height: inherit;

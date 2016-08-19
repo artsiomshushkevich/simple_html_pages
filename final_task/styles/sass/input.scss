@@ -11,10 +11,18 @@
        url("../fonts/Existence/existence-light.ttf");
 }
 
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/HelveticaNeue/HelveticaNeue.woff2"),
+       url("../fonts/HelveticaNeue/HelveticaNeue.woff"),
+       url("../fonts/HelveticaNeue/HelveticaNeue.ttf");
+}
+
 $special-pink: #9f449b;
 $special-gray: #676767;
 $lato-font-stack: Lato, Arial, sans-serif;
 $existence-font-stack: Existence, Arial, sans-serif;
+$helveticaneue-font-stack: HelveticaNeue;
 
 * {
   margin: 0px;
@@ -365,7 +373,7 @@ $existence-font-stack: Existence, Arial, sans-serif;
   @extend .company-logo;
   position: relative;
   font-size: 26px;
-  width: 150px;
+  width: 170px;
   height: 70px;
   text-align: center;
   padding-top: 20px;
@@ -551,10 +559,15 @@ $existence-font-stack: Existence, Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-family: $lato-font-stack;
+    color: #777777;
+    font-size: 13px;
     
     p {
       color: #222222;
       font-size: 13px;
+      font-family: $helveticaneue-font-stack;
+      font-weight: bold;      
     }
     
   }
@@ -573,4 +586,145 @@ $existence-font-stack: Existence, Arial, sans-serif;
     }
   }
   
+}
+
+//after review
+.statistic-section {
+  background-color: #eeeeee;
+  color: #777777;
+  font-family: $helveticaneue-font-stack;
+  padding: 40px 150px 40px 150px;
+}
+
+.statistic-values-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statistic-value {
+  text-align: center;
+  
+  p:nth-child(1) {
+    color: #222222;
+    font-size: 32px;
+  }
+  
+  p:nth-child(2) {
+    font-size: 13px;
+  }
+}
+
+.statistics-description {
+  padding: 50px 100px 40px 100px;
+  text-align: center;
+  
+  img {
+    border-radius: 50%;
+    display: block;
+    height: 110px;
+    margin: 0px auto 30px;
+    width: 110px; 
+  }
+  
+  p:nth-child(2) {
+    color: #4b4b4b;
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+  
+  p:nth-child(3) {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.partfolio-section {
+  font-family: $helveticaneue-font-stack;
+  padding: 50px 150px 50px 150px;
+  text-align: center;
+}
+
+.partfolio-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  
+  li, 
+  a {
+    display: inline-block;
+  }
+  
+  a {
+    border: 1px solid black;
+    border-radius: 2px;
+    color: #222222;
+    font-size: 12px;
+    height: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 55px;
+  }
+  
+  a:hover {
+    background-color: $special-pink;
+    color: white;
+  }
+}
+
+.partfolio-projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  margin-top: 40px; 
+}
+
+.partfolio-project {
+  padding-bottom: 15px;
+  color: #777777;
+  font-size: 12px;
+  
+  p:nth-child(2) {
+    color: #222222;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+.show-more-button,
+input[type=submit] {
+  background-color: $special-pink;
+  border: 1px solid $special-pink;
+  border-radius: 2px;
+  color: white;
+  font-family: $lato-font-stack;
+  height: 40px;
+  width: 125px;
+}
+
+.feedback-container {
+  
+}
+
+input,
+textarea {
+  color: #222222;
+  display: block;
+  font-family: $helveticaneue-font-stack;
+  margin-bottom: 15px;
+}
+
+input[type=text],
+input[type=email] {
+  height: 38px;
+  padding-left: 10px;
+  width: 266px;
+}
+
+
+
+textarea {
+  padding: 10px;
+  width: 266px;
 }

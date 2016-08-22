@@ -24,62 +24,62 @@
     <div class="page-header-menu">
       <div class="page-header-menu-center-part">
        <div class="menu-block">
-        <div class="  header-hexagon">
+        <a href="#services" class="header-hexagon">
           <div class="header-sprite sprite-bubble"></div>
           <p>Services</p>
-        </div>
-        <div class="header-hexagon">
+        </a>
+        <a href="#partfolio" class="header-hexagon">
           <div class="header-sprite sprite-photo"></div>
           <p>Partfolio</p>
-        </div>        
+        </a>        
        </div>
       </div> 
       <div class="page-header-menu-side-part">
         <div class="menu-block">
-          <div class="header-hexagon">
+          <a href="#about" class="header-hexagon">
             <div class="header-sprite sprite-settings"></div>
             <p>About</p>
-          </div>
-          <div class="header-hexagon">
+          </a>
+          <a href="#team" class="header-hexagon">
              <div class="header-sprite sprite-user"></div>
              <p>Team</p>
-          </div>
+          </a>
        </div>
          <div class="menu-block">
-            <div class="header-hexagon">
+            <a href="#blog" class="header-hexagon">
              <div class="header-sprite sprite-pen"></div>
              <p>Blog</p>
-            </div>
-            <div class="header-hexagon">
+            </a>
+            <a href="#contact" class="header-hexagon">
              <div class="header-sprite sprite-paperplane"></div>
              <p>Contact</p>
-            </div>
+            </a>
          </div>
       </div>      
       <div class="page-header-menu-center-part">
-        <div class="header-submit-hexagon">
+        <a href="#nav-bar" class="header-submit-hexagon">
           <div class="header-sprite sprite-arrow-15"></div>
-        </div>
+        </a>
       </div>
     </div>
   </header>
-  <nav class="page-nav-bar">
+  <nav id="nav-bar"class="page-nav-bar">
     <div class="nav-bar-company-logo">
       <span>Bhagas</span>
       <span>kara</span>
       <span>.</span>
     </div>
     <ul>
-      <li><a href="">HOME</a></li>
-      <li><a href="">ABOUT</a></li>
-      <li><a href="">TEAM</a></li>
-      <li><a href="">SERVICES</a></li>
-      <li><a href="">PARTFOLIO</a></li>
-      <li><a href="">BLOG</a></li>
-      <li><a href="">CONTACT</a></li>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#team">TEAM</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#partfolio">PARTFOLIO</a></li>
+      <li><a href="#blog">BLOG</a></li>
+      <li><a href="#contact">CONTACT</a></li>
     </ul>
   </nav>
-  <section class="benefits-section">
+  <section id="home" class="benefits-section">
     <div class="benefit">
       <div class="benefit-hexagon">
         
@@ -137,7 +137,7 @@
       </p>
     </div>
   </section>
-  <section class="about-us-section">
+  <section id="about" class="about-us-section">
       <div class="section-title">
         <span>About</span>
         <span>us</span>
@@ -165,7 +165,7 @@
       Our services will lorem and ipsum your aliquam
     </h3>
   </section>
-  <section class="team-section">
+  <section id="team" class="team-section">
     <div class="section-title">
       <span>Our</span>
       <span>team</span>
@@ -216,7 +216,7 @@
       </div>
     </div>
   </section>
-  <section class="skills-section">
+  <section id="services" class="skills-section">
     <div class="section-title">
       <span>Our</span>
       <span>skills</span>
@@ -279,7 +279,7 @@
       Our services will lorem and ipsum your aliquam
     </h3>
   </section>
-  <section class="statistic-section">
+  <section id="blog" class="statistic-section">
     <div class="statistic-values-container">
       <div class="statistic-value">
         <p>365</p>
@@ -309,7 +309,7 @@
       </p>
     </div>
   </section>
-  <section class="partfolio-section">
+  <section id="partfolio" class="partfolio-section">
     <div class="section-title">
       <span>Our</span>
       <span>partfolio</span>
@@ -358,7 +358,7 @@
       Watch more
     </button>
   </section>
-  <section class="feedback-section">
+  <section id="contact" class="feedback-section">
     <div class="section-title">
       <span>Get</span>
       <span>in touch</span>
@@ -367,11 +367,36 @@
       <form action="">
         <input type="text" name="name" placeholder="Your Name">
         <input type="email" name="email" placeholder="Your Email">
-        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" placeholder="Send email">
       </form>
+      <div class="contact-info">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+        </p>
+        <p>
+          1600 Pennsylvania Ave NW, Washington, 
+          DC 20500, United States of America. 
+        </p>
+        <p> 
+          T: (202) 456-1111
+        </p>
+        <p>
+          M: (202) 456-1212
+        </p>
+        <div class="footer-contact-links">
+          <a href="https://facebook.com" class="footer-contact-link">f</a>
+          <a href="https://twitter.com" class="footer-contact-link">t</a>
+          <a href="https://google.com" class="footer-contact-link">g</a>
+        </div>
+      </div>
     </div>
   </section>
+  <footer class="page-footer">
+    <span>Bhagas</span>
+    <span>kara</span>
+    <span>.</span>
+  </footer>
  </div>
 </body>
 </html>

@@ -303,6 +303,43 @@ $helveticaneue-font-stack: HelveticaNeue;
   }
 }
 
+.benefit-sprite {
+  background-image: url(../images/benefits-sprites.png);
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0px auto;
+}
+
+.sprite-cup {
+  width: 28px;
+  height: 31px;
+  background-position: -10px -10px;
+}
+
+.sprite-diamond {
+  width: 42px;
+  height: 32px;
+  background-position: -10px -61px;
+}
+
+.sprite-heart {
+  width: 36px;
+  height: 31px;
+  background-position: -10px -113px;
+}
+
+.sprite-phone {
+  width: 22px;
+  height: 32px;
+  background-position: -10px -164px;
+}
+
+.sprite-study {
+  width: 35px;
+  height: 30px;
+  background-position: -10px -216px;
+}
+
 .benefits-section {
   height: 398px;
   display: flex;
@@ -336,6 +373,7 @@ $helveticaneue-font-stack: HelveticaNeue;
     
     background-color: #bdc3c7;
     margin: 0px auto;
+    padding-top: 13px;
   }
   
   .benefit-hexagon:before {
@@ -475,6 +513,11 @@ $helveticaneue-font-stack: HelveticaNeue;
     height: 27px;
     background-color: #bdc3c7;
     display: block;
+    text-decoration: none;
+    color: white;
+    font-family: $lato-font-stack;
+    font-size: 25px;
+    text-align: center;
   }
   
   .prev-next-hexagon:before {
@@ -484,6 +527,7 @@ $helveticaneue-font-stack: HelveticaNeue;
     border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
     border-bottom: 14px solid #bdc3c7;
+    
   }
   
   .prev-next-hexagon:after {
